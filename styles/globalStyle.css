@@ -16,8 +16,24 @@ body {
   font-size: 16px;
 }
 
+.font-inter {
+  font-family: "Inter";
+}
+
+
+
+/* Optimize CSS Here */
+.pad-5-7 {
+  padding: 5rem 7%;
+}
+
+/* background-color */
 .c-main {
   color: var(--main-color);
+}
+
+.color-while {
+  color: #ffffff;
 }
 
 .c-primary {
@@ -33,32 +49,5 @@ body {
 }
 .font-inter {
   font-family: "Inter";
-}
-/* Responsive Device here */
-/* Large PC */
-@media only screen and (min-width: 1600px) {
-  body {
-      width: 1920px;
-  }
-}
-
-/* Medium PC */
-@media only screen and (min-width: 1200px) and (max-width: 1600px) {
-
-}
-
-/* PC */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
-
-}
-
-/* Tablet */
-@media only screen and (min-width: 576px) and (max-width: 992px) {
-
-}
-
-/* Mobile */
-@media only screen and (max-width: 576px){
-
 }
 
