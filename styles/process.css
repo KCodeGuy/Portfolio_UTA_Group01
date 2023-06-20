@@ -211,7 +211,9 @@
 .mt {
   margin-left: 500px;
 }
-
+.pl-10-percent {
+  padding-left: 10%;
+}
 /* PC */
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
   .assss {
@@ -271,7 +273,6 @@
     width: 75%;
     color: #000000;
     font-size: 18px;
-    margin-left: 150px;
     text-align: center;
     font-family: "Inter";
     font-style: normal;
@@ -331,14 +332,12 @@
     color: #ffffff;
     font-size: 15px;
     text-align: center;
-    margin-left: 70px;
   }
 
   .assss {
     width: 100%;
     color: #ffffff;
     font-size: 13px;
-    margin-left: 95px;
     width: 72%;
     text-align: center;
   }

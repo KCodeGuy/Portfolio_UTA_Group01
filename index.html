@@ -14,31 +14,98 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./styles/globalStyle.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/projectIntro.css" />
     <link rel="stylesheet" href="./styles/process.css" />
+    <link rel="stylesheet" href="./styles/teachnology.css" />
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     <title>Portfolio_UTA_Group01</title>
   </head>
   <body>
-    <!-- Header -->
-    <header class="">
-      <h2 class="">This is header</h2>
+    <!-- Header - UolLT -->
+    <header class="bg-primary">
+      <div
+        class="relative w-full text-white bg-header-img bg-no-repeat bg-cover"
+      >
+        <nav class="">
+          <div class="navbar max-w-full flex items-center justify-between">
+            <div class="logo z-20">
+              <a href="index.html">
+                <img
+                class="absolute ml-0 top-0 left-0"
+                src="images/Logo_UTA.png"
+                alt="logo"
+              />
+              </a>
+            </div>
+
+            <ul class="link flex z-20 mt-12 mr-12">
+              <li class="nav-item">
+                <a class="nav-link btn" href="#introductionMembers">Giới thiệu nhóm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" href="#introductionProduct">Đôi chút về dự án nhóm</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" href="#design">Vận hành và thiết kế</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" href="#development">Quy trình phát triển</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link btn" href="#accomplishments">Thành tựu đạt được</a>
+              </li>
+            </ul>
+
+            <div
+              class="menu__btn hidden text-3xl mt-12 mr-8 cursor-pointer bg-primary c-main px-3 py-2 rounded-lg z-50"
+            >
+              <i class="fa-solid fa-bars"></i>
+            </div>
+          </div>
+
+          <div
+            class="nav__mobile z-40 hidden absolute animation-menu py-12 w-80-percent bg-primary rounded-xl top-0 right-0"
+          >
+            <li><a href="#introductionMembers" class="btn__mobile">Giới thiệu nhóm</a></li>
+            <li><a href="#introductionProduct" class="btn__mobile">Đôi chút về dự án nhóm</a></li>
+            <li><a href="#design" class="btn__mobile">Vận hành và thiết kế</a></li>
+            <li><a href="#development" class="btn__mobile">Quy trình phát triển</a></li>
+            <li><a href="#accomplishments" class="btn__mobile">Thành tựu đạt được</a></li>
+            <li><a href="index.html" class="btn__mobile">Đăng ký ngay</a></li>
+          </div>
+        </nav>
+
+        <div
+          class="overlay fixed hidden top-0 left-0 right-0 bottom-0 z-30"
+        ></div>
+
+        <div class="content__info text-center py-18-percent">
+          <h1 class="text-6xl sm:text-2xl md:text-3xl font-semibold">PORTFOLIO NHÓM 1</h1>
+          <p class="f-s-20 mt-6 font-semibold">
+            Ở đây nhận book chổ giữ xe ô tô!
+          </p>
+          <button class="btn mt-4 z-30">Đăng ký</button>
+        </div>
+      </div>
     </header>
 
     <!-- Main Content -->
     <main>
-      <!-- Introduction about members  -->
+      <!-- Introduction about members - HieuTTN-->
       <section
         class="bg-primary flex flex-wrap justify-center items-center w-full"
+        id="introductionMembers"
       >
         <div
-          class="w-10/12 mt-6 text-base md:mt-20 text-center font-sans text-white not-italic font-bold md:text-5xl"
+          class="w-10/12 mt-6 lg:text-4xl xl:text-4xl md:mt-20 text-center font-sans text-white not-italic font-bold md:text-3xl sm:text-3xl"
         >
           Giới thiệu về nhóm
         </div>
         <img class="w-full" src="./images/Line.png" alt="Line" />
         <div class="w-10/12 flex flex-wrap justify-center">
           <div
-            class="md:w-11/12 text-xs text-center font-sans text-white not-italic font-normal md:text-3xl slider"
+            class="md:w-11/12 text-lg text-center font-sans text-white text-justify not-italic font-normal slider"
           >
             Hiện tại chúng tôi đang là sinh viên tại trường ĐH FPT và Greenwich
             Cần Thơ. Nhận thấy vấn đề kẹt xe ở Cần Thơ vẫn chưa được khắc phục
@@ -47,7 +114,7 @@
           </div>
         </div>
         <div
-          class="md:mt-20 mt-6 w-10/12 text-center font-sans text-white not-italic font-bold md:text-5xl"
+          class="md:mt-20 mt-6 w-10/12 text-center font-sans text-white not-italic font-bold lg:text-4xl xl:text-4xl md:text-3xl sm:text-3xl"
         >
           Thiết kế trang web
         </div>
@@ -69,7 +136,7 @@
                 <div
                   class="text-xs md:mt-28 mt-16 py-10 md:py-14 rounded-2xl px-2 md:px-4 bg-main text-center md:w-10/12 md:text-xl font-sans font-normal text-black"
                 >
-                  <b class="text-black md:text-2xl text-xs">Trần Đăng Khoa</b>
+                  <b class="text-black text-lg">Trần Đăng Khoa</b>
                   <br />
                   Mình là sinh viên năm 3 chuyên nghành kĩ thuật phần mềm tại
                   đại học FPT cần thơ, có đam mê với Font-end lẫn Back-end. Với
@@ -211,7 +278,7 @@
           </div>
         </div>
         <div
-          class="md:mt-36 w-10/12 text-center font-sans text-white not-italic font-bold md:text-5xl"
+          class="md:mt-36 w-10/12 text-center font-sans text-white not-italic font-bold lg:text-4xl xl:text-4xl md:text-3xl sm:text-3xl"
         >
           Thiết kế đồ họa
         </div>
@@ -271,7 +338,7 @@
         </div>
 
         <div
-          class="md:mt-36 w-10/12 text-center font-sans text-white not-italic font-bold md:text-5xl"
+          class="md:mt-36 w-10/12 text-center font-sans text-white not-italic font-bold lg:text-4xl xl:text-4xl md:text-3xl sm:text-3xl"
         >
           Marketing
         </div>
@@ -291,7 +358,7 @@
                 <div
                   class="text-xs md:mt-28 mt-16 py-10 md:py-14 rounded-2xl px-2 md:px-4 bg-main text-center md:w-10/12 md:text-xl font-sans font-normal text-black"
                 >
-                  <b class="text-black md:text-2xl text-xs">Nguyễn Thành Hùy</b>
+                  <b class="text-black md:text-2xl text-xs">Nguyễn Thành Huy</b>
                   <br />
                   Mình là sinh viên năm 3 của trường Đại học FPT Cần Thơ. Với dự
                   án lần này, mình giữ vai trò viết content của dự án nhằm hoàn
@@ -317,7 +384,7 @@
                     >Nguyễn Hoàng Phúc</b
                   >
                   <br />
-                  Mình là sinh viên năm 3 của trường Đại học FPT Cần Thơ. Với dự
+                  Mình là sinh viên năm 3 của trường Đại học Greenwich. Với dự
                   án lần này, mình giữ vai trò viết content của dự án nhằm hoàn
                   thành tốt mục tiêu đã đề ra của dự án.
                 </div>
@@ -328,18 +395,18 @@
         <img class="mt-14" src="./images/Line.png" alt="Line" />
       </section>
 
-      <!-- Section KhoaTD -->
-      <section class="w-full my-9 bg-m-primary text-m-white">
+      <!-- Introduction about product - KhoaTD -->
+      <section class="w-full my-9 bg-m-primary text-m-white" id="introductionProduct">
         <div class="w-full">
           <div class="flex flex-wrap">
             <div class="col col-sm-12 col-md-12 col-lg-6">
               <div class="w-full bg-primary text-white py-8 px-10-percent">
-                <h3 class="c-main text-2xl font-bold text-m-center">
+                <h3 class="c-main text-3xl font-bold text-m-center">
                   Đôi chút về dự án của nhóm
                 </h3>
               </div>
               <p
-                class="py-8 px-10-percent font-medium max-line-10 text-justify"
+                class="py-8 px-10-percent font-medium max-line-10 text-justify text-lg"
               >
                 Dự án Parking Lot được sáng tạo bởi thực tập sinh của UTA
                 Solution tại Cần Thơ. Nhìn thấy giao thông vẫn còn là vấn đề gây
@@ -367,7 +434,7 @@
 
           <div class="flex w-full">
             <div class="col col-sm-12 col-md-12 col-lg-6">
-              <p class="py-8 px-10-percent font-medium text-justify">
+              <p class="py-8 px-10-percent text-lg text-justify">
                 Dự án Parking Lot là một trong những dự án đầu tiên tại Cần Thơ
                 hỗ trợ người dùng được chỗ ngay trên website nhằm giải quyết và
                 hạn chế tình trạng kẹt xe tại Cần Thơ. Và ở đây mọi người có
@@ -376,7 +443,7 @@
             </div>
             <div class="col col-lg-6 d-t-hide d-m-hide">
               <div class="w-full bg-primary text-white py-8 px-10-percent">
-                <h3 class="c-main text-2xl font-bold">Về dự án</h3>
+                <h3 class="c-main text-3xl font-bold">Về dự án</h3>
               </div>
             </div>
           </div>
@@ -384,26 +451,26 @@
 
         <div class="w-full py-8 px-5-percent">
           <div class="flex justify-between align-center">
-            <button class="btn-project text-5xl py-4 active c-m-main">
+            <button class="btn-project text-5xl py-4 active c-primary c-m-main">
               <i class="fa-sharp fa-solid fa-map-location-dot"></i>
             </button>
-            <button class="btn-project text-5xl py-4 c-m-main">
+            <button class="btn-project text-5xl py-4 c-primary c-m-main">
               <i class="fa-solid fa-square-parking"></i>
             </button>
-            <button class="btn-project text-5xl py-4 c-m-main">
+            <button class="btn-project text-5xl py-4 c-primary c-m-main">
               <i class="fa-solid fa-money-check-dollar"></i>
             </button>
-            <button class="btn-project text-5xl py-4 c-m-main">
+            <button class="btn-project text-5xl py-4 c-primary c-m-main">
               <i class="fa-solid fa-circle-question"></i>
             </button>
-            <button class="btn-project text-5xl py-4 c-m-main">
+            <button class="btn-project text-5xl py-4 c-primary c-m-main">
               <i class="fa-solid fa-money-bill-wave"></i>
             </button>
           </div>
           <div
             class="project-content w-full bg-main rounded-xl p-8 mt-8 animation-project bg-m-main active"
           >
-            <p class="text-justify">
+            <p class="text-justify text-lg">
               Tìm kiếm và đặt chỗ: dự án cung cấp một giao diện thân thiện và dễ
               dàng sử dụng cho tất cả mọi người cho phép tìm kiếm và đặt chỗ giữ
               xe hơi trước tại Cần Thơ. Người dùng chỉ cần nhập thông tin về vị
@@ -415,7 +482,7 @@
           <div
             class="project-content c-main w-full bg-primary rounded-xl p-8 mt-8 animation-project bg-m-main"
           >
-            <p class="text-justify">
+            <p class="text-justify text-lg">
               Thanh toán trực tuyến: hướng đến sự tiện lợi, hệ thống cung cấp
               nhiều phương thức thanh toán. Người dùng có thể dùng tiền mặt hay
               những phương thức thanh toán phổ biến nhất hiện nay như: Visa,
@@ -426,7 +493,7 @@
           <div
             class="project-content w-full bg-main rounded-xl p-8 mt-8 animation-project bg-m-main"
           >
-            <p class="text-justify">
+            <p class="text-justify text-lg">
               Quản lý bãi đỗ xe: Chúng tôi cũng cung cấp riêng một giao diện
               quản lý cho chủ sở hữu bãi đỗ xe. Ở đó, chủ sở hữu sẽ dễ dàng quản
               lý về những thông tin cơ bản và nâng cao ở bãi của mình, bao gồm
@@ -439,7 +506,7 @@
           <div
             class="project-content c-main w-full bg-primary rounded-xl p-8 mt-8 animation-project bg-m-main"
           >
-            <p class="text-justify">
+            <p class="text-justify text-lg">
               Cung cấp thông tin chi tiết: giúp người tiêu dùng có cái nhìn tổng
               quan và chân thực nhất về bãi đỗ xe trước khi sử dụng, chúng tôi
               cũng cung cấp thông tin chi tiết về từng bãi đỗ, vị trí địa lí,
@@ -449,7 +516,7 @@
           <div
             class="project-content w-full bg-main rounded-xl p-8 mt-8 animation-project bg-m-main"
           >
-            <p class="text-justify">
+            <p class="text-justify text-lg">
                Tích hợp bản đồ: để tăng tính tiện lợi và khả năng tìm kiếm, dự
               án cũng tích hợp bản đồ để khách hàng có thể dễ dàng tìm kiếm vị
               trí của các bãi đỗ xe, ngoài ra, người dùng còn có thể dùng tính
@@ -459,78 +526,418 @@
           </div>
         </div>
       </section>
+
+      <!-- User Interface Design - KienTT -->
+      <section class="bg-basement bg-cover text-white" id="design">
+        <div class="backdrop-blur-lg pt-20">
+          <div
+            class="border-t-2 md:border-t-4 lg:border-t-8 border-dashed border-main"
+          ></div>
+          <div class="flex flex-row gap-4 ml-4 md:ml-16 lg:ml-24">
+            <div class="w-1/2 mt-20 mb-20">
+              <h3
+                class="font-bold font-inter sm:c-primary text-xl lg:text-3xl lg-c-primary"
+              >
+                Về thiết kế giao diện
+              </h3>
+              <p
+                class="font-inter font-normal mt-4 text-justify text-lg lg:text-black"
+              >
+                Ở đây nhóm sẽ làm về giao diện đơn giản nhất có thể cho người
+                dùng cũng như khách hàng khi ghé qua trang web của tụi tui.
+                <br />
+                Cũng như hông có bị rối mắt khi có quá nhiều chữ, khách hàng sẽ
+                có thể tự xem những phần họ muốn dễ dàng hơn mà không phải tìm
+                kiếm để tránh tình trạng “phiền” hay “lười vì nhiều quá mà không
+                đọc nữa nha!
+              </p>
+            </div>
+            <div class="w-1/2 mt-20">
+              <img
+                class="w-full h-full object-center object-cover"
+                src="./images/Basement_top.png"
+                alt="Basement_top"
+              />
+            </div>
+          </div>
+          <div
+            class="border-t-2 md:border-t-4 lg:border-t-8 border-dashed border-main"
+          ></div>
+          <div class="flex flex-row gap-4 mt-6 ml-4 md:ml-16 lg:ml-24">
+            <div class="w-1/2 flex flex-row gap-5">
+              <div class="flex flex-col-reverse xl:flex-row md:gap-2 m-auto">
+                <p
+                  class="font-inter font-normal mt-4 text-xs md:text-lg lg:text-2xl mt-4 md:mt-0 text-center"
+                >
+                  Hex: #FF9002 <br />
+                  RGB: 255, 144, 2
+                </p>
+                <div
+                  class="h-14 w-14 md:h-16 md:w-24 md:rounded-lg bg-main m-auto md:m-0 rounded-3xl"
+                ></div>
+              </div>
+              <div class="flex flex-col-reverse xl:flex-row md:gap-2 m-auto">
+                <p
+                  class="font-inter font-normal mt-4 text-xs md:text-lg lg:text-2xl mt-4 md:mt-0 text-center"
+                >
+                  Hex: #002952 <br />
+                  RGB: 0, 41, 82
+                </p>
+                <div
+                  class="h-14 w-14 md:h-16 md:w-24 bg-primary border-main border-2 md:border-0 m-auto rounded-3xl m-auto md:m-0 md:rounded-lg"
+                ></div>
+              </div>
+            </div>
+            <div class="w-1/2">
+              <h3
+                class="font-bold font-inter sm:c-primary text-xl lg:text-3xl lg-c-primary"
+              >
+                Màu dùng cho trang web
+              </h3>
+              <p
+                class="font-inter font-normal mt-4 text-justify text-lg lg:text-black"
+              >
+                Ở đây lấy màu của logo để làm màu chính cho trang web, đồng thời
+                cũng có thể khiến khách hàng trong vô thức cũng sẽ nhớ đến cũng
+                như dịch vụ này dễ hơn.
+              </p>
+            </div>
+          </div>
+          <div
+            class="border-t-2 md:border-t-4 lg:border-t-8 border-dashed border-main mt-4 mb-4"
+          ></div>
+          <div class="flex flex-row gap-4 ml-4 md:ml-16 lg:ml-24">
+            <div class="w-1/2 md:mt-20">
+              <h3
+                class="font-bold font-inter sm:c-primary text-xl lg:text-3xl lg-c-primary"
+              >
+                Tính năng mà trang web mang lại
+              </h3>
+              <p
+                class="font-inter font-normal mt-4 text-justify text-lg lg:text-black"
+              >
+                Ở đây, dự án của nhóm có mấy tính năng đơn giản cũng như dễ hiểu
+                cho khách hàng cũng như giao diện thân thiện với khách hàng.
+                <br />
+                Tương tác trên trang web chủ yếu là đơn giản nhất có thể cho
+                khách hàng khi truy cập. Tất nhiên là khách hàng còn có thể
+                nhanh chóng đăng ký và mở giao dịch với tụi tui chỉ với một nhấn
+                nha!
+                <br />
+                Ngoài ra, khách hàng còn có thể tự chọn và truy cập địa chỉ để
+                đỗ xe dễ hơn.
+              </p>
+            </div>
+            <div class="w-1/2">
+              <img
+                class="w-full h-full object-center object-cover"
+                src="./images/Basement_full.png"
+                alt="Basement_full"
+              />
+            </div>
+          </div>
+          <div
+            class="border-t-2 md:border-t-4 lg:border-t-8 border-dashed border-main mt-4 mb-4"
+          ></div>
+          <div class="flex flex-row gap-4 mr-4 md:mr-16 lg:mr-24">
+            <div class="w-1/2">
+              <img
+                class="w-full h-full object-center object-cover"
+                src="./images/Basement_bottom.png"
+                alt="Basement_bottom"
+              />
+            </div>
+            <div class="w-1/2 mr-7 text-right md:mt-20">
+              <div></div>
+              <h3
+                class="font-bold font-inter sm:c-primary text-xl lg:text-3xl lg-c-primary"
+              >
+                Tính năng mang lại
+              </h3>
+              <p
+                class="font-inter font-normal mt-4 text-justify text-lg lg:text-black"
+              >
+                Ở đây, dự án của tụi tui có mấy tính năng đơn giản cũng như dễ
+                hiểu cho khách hàng cũng như giao diện thân thiện với khách hàng
+                nữa. Tương tác trên trang web của tụi tui chủ yếu là đơn giản
+                nhất có thể cho khách hàng khi truy cập. Tất nhiên là khách hàng
+                còn có thể nhanh chóng đăng ký và mở giao dịch với tụi tui chỉ
+                với một nhấn nha! Ngoài ra, khách hàng còn có thể tự chọn và
+                truy cập địa chỉ để đỗ xe dễ hơn.
+              </p>
+            </div>
+          </div>
+          <div
+            class="border-t-2 md:border-t-4 lg:border-t-8 border-dashed border-main mt-4 mb-4"
+          ></div>
+        </div>
+      </section>
+
+      <!-- Development - QuocNA-->
+      <section class="services" id="development">
+        <h1
+          class="m-bottom-3 bg-primary c-main d-flex d-center text-xl lg:text-3xl f-w-bolder h-182 "
+        >
+          Quy trình phát triển
+        </h1>
+        <div class="row ad d-flex d-items-center g-8 pad-5-7">
+          <div class="w-650">
+            <div class="">
+              <img
+                class="w-200"
+                src="images/Critical_Thinking_Icon.png"
+                alt="Critical_Thinking_Icon"
+              />
+              <p
+                class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80"
+              >
+                Lên ý tưởng
+              </p>
+              <p
+                class="nd font-inter f-style-normal color-black d-justify line-height-24 f-w-400 mg-left-80 mg-top-30 text-justify text-lg"
+              >
+                Chúng tôi đã tiến hành khảo sát thị trường, phỏng vấn người dân
+                tại bến Ninh Kiều, Cần Thơ để nghe cảm nhận chân thực nhất của
+                người dân sống tại đây. Bên cạnh đó, chúng tôi cũng đã hỏi ý
+                kiến của các chuyên gia để nghiên cứu về các vấn đề liên quan
+                đến bãi giữ xe tại đây. Những ý tưởng ấy là nền móng trong việc
+                xác định phạm vi và mục tiêu của dự án.
+              </p>
+            </div>
+            <div class="m-top-50">
+              <img class="w-200" src="images/Autograph_Icon.png" alt="Autograph_Icon" />
+              <p
+                class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80"
+              >
+                Thiết kế
+              </p>
+              <p
+                class="nd font-inter f-style-normal color-black d-justify line-height-24 f-w-400 mg-left-80 mg-top-30 text-justify text-lg"
+              >
+                Ở giai đoạn này, chúng tôi tập trung vào việc thiết kế giao diện
+                và hệ thống. Người thiết kế sẽ lên kế hoạch ban đầu cho đội ngũ
+                phát triển của chúng tôi, và những khách hàng ban đầu sẽ cung
+                cấp và điều chỉnh để hoàn thiện lại bản thiết kế.
+              </p>
+            </div>
+          </div>
+          <div class="content slideshow">
+            <img class="ma" src="images/Graph.png" alt="graph" />
+            <img class="mma" src="images/h2.jpg" alt="graph_2" />
+            <img class="mmma" src="images/h1.jpg" alt="graph_1" />
+          </div>
+
+          <div class="content1 slideshow1">
+            <img class="ma1" src="images/h3.jpg" alt="graph_3" />
+            <img class="mma1" src="images/h4.jpg" alt="graph_4" />
+            <img class="mmma1" src="images/h5.jpg" alt="graph_5" />
+          </div>
+        </div>
+        <div class="row d-flex d-items-center add g-8 pad-5-7">
+          <div class="w-770">
+            <div class="">
+              <img
+                class=""
+                src="images/Spaceship_Launch_Documentation_Icon.png"
+                alt=""
+              />
+              <p
+                class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80"
+              >
+                Phát triển ý tưởng
+              </p>
+              <p
+                class="nd w-1000 font-inter f-style-normal color-black d-justify line-height-24 f-w-400 mg-left-80 mg-top-30 text-justify text-lg"
+              >
+                Ở giai đoạn này, chúng tôi sẽ tập trung tiềm lực vào việc xây
+                dựng và phát triển các tính năng cần thiết cho trang web. Đội
+                ngũ lập trình sẽ sử dụng các ngôn ngữ lập trình và các công cụ
+                phù hợp để triển khai hệ thống. Và các tính năng cũng được phát
+                triển và cập nhật ở từng giai đoạn phù hợp.
+              </p>
+            </div>
+          </div>
+          <div class="w-650 m-top--20 mg-left-100">
+            <img
+              class="mg-left-470 w-100"
+              src="images/Order_Completed_Icon.png"
+              alt="Order_Completed_Icon"
+            />
+            <p
+              class="mdd c-primary font-inter fs-25 f-w-700 line-height-30 mg-top--40 mg-left--10"
+            >
+              Kiểm tra lại
+            </p>
+            <p
+              class="ndd font-inter f-style-normal color-black d-justify line-height-24 f-w-400 mg-top-20 mg-left--10 text-justify text-lg"
+            >
+              Đến giai đoạn này, hệ thống sẽ được triển khai để tiến hành kiểm
+              tra các tính năng, giao diện cũng như hiệu suất thực tế của trang
+              web. Các lỗi và vấn đề chưa hoàn thiện sẽ được bên đội ngũ phát
+              triển ghi nhận lại và sửa lỗi trong thời gian gần nhất.
+            </p>
+          </div>
+        </div>
+        <div class="w-full text-center">
+         <div class="px-10-percent ">
+          <h2
+          class="text-m-white md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mt-4"
+          >Cuối cùng là triển khai dự án</h2>
+          <p
+            class="text-m-white d-justify font-inter text-justify text-lg mt-4"
+          >
+            Đây là giai đoạn cuối cùng, sau khi hoàn thiện tất cả các công đoạn,
+            đội ngũ phát triển sẽ đảm bảo rằng mọi tính năng sẽ hoạt động như
+            mong đợi, trang web sẽ được đưa vào và triển khai trong môi trường
+            thực tế.
+          </p> 
+         </div>
+        </div>
+        <div class="w-full flex flex-col items-center py-4">
+          <img class="" src="images/Airdrop.png" alt="Airdrop" />
+          <img class="" src="images/Arrow.png" alt="Arrow" />
+        </div>
+      </section>
+
+       <!-- Acceomplishments - TuanDM -->
+      <section class="services bg-primary py-10 p-8 text-justify" id="accomplishments">
+        <div class=" text-xl lg:text-3xl c-main">
+          <h1 class="py-8 px-0 w-full text-center font-inter font-bold leading-5 ">Kết
+            quả và thành tựu đạt được</h1>
+        </div>
+        <p
+          class="c-main w-4/5 max-w-screen-2xl font-inter text-justify text-lg mx-auto mt-0 mb-0 ">
+          Sau khi trang web đã đi vào hoạt động. Trong 2 tuần đầu, chúng tôi ghi nhận hơn 50000 lượt truy cập và hơn 1200
+          khách hàng đã sử dụng dịch vụ. Bên cạnh đó, dự án này còn giúp tăng doanh thu cho các chủ bãi giữ xe, chúng tôi đã
+          ghi nhận với doanh thu lần lượt là 17tr500 và 14tr800 của 2 trong tổng các bãi. Ngoài ra, dự án nhận được vô số
+          tích cực từ khách hàng, họ đánh giá cao sự tiện lợi mà trang web mang lại. Và quan trọng nhất, dự án đã đóng góp
+          một phần không nhỏ vào vấn đề giải quyết kẹt xe tại Cần Thơ.</p>
+        </div>
+        <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+          <div class="swiper-container !overflow-hidden">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <blockquote class="bg-gray-100 p-8">
+                  <div class="flex items-center gap-4">
+                    <img alt="avatar_joinnyDang" src="./images/avatar_joinnyDang.webp" class="h-16 w-16 rounded-full object-cover" />
+                    <div class="text-sm">
+                      <p class="font-black text-base">Joiny Dang</p>
+                      <p class="mt-1 c-main">Doanh nhân nước ngoài</p>
+                    </div>
+                  </div>
+                  <p class="relative mt-4 text-gray-500">
+                    <span class="text-xl">&ldquo;</span>
+                    Tôi đã sử dụng dịch vụ đặt xe của các bạn trong một lần du lịch Việt Nam nó rất thông minh và tiện ít!
+                    <span class="text-xl">&rdquo;</span>
+                  </p>
+                </blockquote>
+              </div>
+
+              <div class="swiper-slide">
+                <blockquote class="bg-gray-100 p-8">
+                  <div class="flex items-center gap-4">
+                    <img alt="avatar_khoaBug" src="./images/avatar_khoaBug.webp" class="h-16 w-16 rounded-full object-cover" />
+                    <div class="text-sm">
+                      <p class="font-black text-base">Khoa Bug</p>
+                      <p class="mt-1 c-main">Youtuber nổi tiếng</p>
+                    </div>
+                  </div>
+                  <p class="relative mt-4 text-gray-500">
+                    <span class="text-xl">&ldquo;</span>
+                    Quả thật là một dịch vụ tuyệt vời, nhanh chống, rẻ, là những từ mà chúng tôi diễn tả về dịch vụ!
+
+                    <span class="text-xl">&rdquo;</span>
+                  </p>
+                </blockquote>
+              </div>
+              <div class="swiper-slide">
+                <blockquote class="bg-gray-100 p-8">
+                  <div class="flex items-center gap-4">
+                    <img alt="avatar_bray" src="./images/avatar_bray.jpg" class="h-16 w-16 rounded-full object-cover" />
+
+                    <div class="text-sm">
+                      <p class="font-black text-base">B-Ray</p>
+                      <p class="mt-1 c-main">Rapper</p>
+                    </div>
+                  </div>
+                  <p class="relative mt-4 text-gray-500">
+                    <span class="text-xl">&ldquo;</span>
+
+                    Sử dụng app đặt chổ trong tít tắt. Mỗi lần đi diễn ở đây tôi sẽ không phải lo về chổ đậu xe!
+
+                    <span class="text-xl">&rdquo;</span>
+                  </p>
+                </blockquote>
+              </div>
+            </div>
+
+            <div class="swiper-pagination !relative !bottom-0 mt-12"></div>
+          </div>
+        </div>
+      </section>
     </main>
 
-    <!-- Section 4 -->
-    <section class="services">
-      <h1 class="heading m-bottom-3 bg-primary c-main d-flex d-center fs-30 f-w-bolder h-182">Quy trình phát triển</h1>
-      <div class="row ad d-flex d-items-center g-8 pad-5-7">
-        <div class="w-650">
-          <div class="">
-            <img class="w-200" src="images/Critical_Thinking_Icon.png" alt="">
-            <p class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80 ">Lên ý tưởng</p>
-            <p class="nd font-inter f-style-normal color-black d-justify line-height-24 f-w-400 fs-22 mg-left-80 mg-top-30">Chúng tôi đã tiến hành khảo sát thị trường, phỏng vấn người dân tại bến Ninh Kiều,
-              Cần Thơ để nghe cảm nhận chân thực nhất của người dân sống tại đây. Bên cạnh đó, chúng tôi cũng đã hỏi ý
-              kiến của các chuyên gia để nghiên cứu về các vấn đề liên quan đến bãi giữ xe tại đây.
-              Những ý tưởng ấy là nền móng trong việc xác định phạm vi và mục tiêu của dự án.</p>
-          </div>
-          <div class="m-top-50">
-            <img class="w-200" src="images/Autograph_Icon.png" alt="">
-            <p class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80">Thiết kế</p>
-            <p class="nd font-inter f-style-normal color-black d-justify line-height-24 f-w-400 fs-22 mg-left-80 mg-top-30">Ở giai đoạn này, chúng tôi tập trung vào việc thiết kế giao diện và hệ thống.
-              Người thiết kế sẽ lên kế hoạch ban đầu cho đội ngũ phát triển của chúng tôi,
-              và những khách hàng ban đầu sẽ cung cấp và điều chỉnh để hoàn thiện lại bản thiết kế.</p>
-          </div>
-        </div>
-        <div class="content slideshow">
-          <img class="ma" src="images/Graph.png" alt="">
-          <img class="mma" src="images/h2.jpg" alt="">
-          <img class="mmma" src="images/h1.jpg" alt="">
-        </div>
+    <!-- Footer - HuyNV -->
+    <footer class="bg-primary grid place-items-center py-12">
+      <div class="w-80-percent text-white">
+        <div class="text-3xl border-l-4 pl-2">Liên hệ</div>
+       <div class="flex flex-wrap">
+        <div class="col col-sm-12 col-md-6 col-lg-6">
+          <p class="mt-2">
+            Đầu tư vào thiết kế của công ty bạn, mọi thứ bạn muốn và cần, tôi sẽ sẵn lòng trợ giúp.
+          </p>
 
-        <div class="content1 slideshow1">
-          <img class="ma1" src="images/h3.jpg" alt="">
-          <img class="mma1" src="images/h4.jpg" alt="">
-          <img class="mmma1" src="images/h5.jpg" alt="">
-        </div>
-      </div>
-      <div class="row d-flex d-items-center add g-8 pad-5-7">
-        <div class="w-770">
-          <div class="">
-            <img class="" src="images/Spaceship_Launch_Documentation_Icon.png" alt="">
-            <p class="md c-primary font-inter f-style-normal fs-25 f-w-700 line-height-30 mg-top--50 mg-left-80">Phát triển ý tưởng</p>
-            <p class="nd w-1000 font-inter f-style-normal color-black d-justify line-height-24 f-w-400 fs-22 mg-left-80 mg-top-30">Ở giai đoạn này, chúng tôi sẽ tập trung tiềm lực vào
-              việc xây dựng và phát triển các tính năng cần thiết cho trang web.
-              Đội ngũ lập trình sẽ sử dụng các ngôn ngữ lập trình và các công cụ phù hợp để triển khai hệ thống.
-              Và các tính năng cũng được phát triển và cập nhật ở từng giai đoạn phù hợp.</p>
+          <div class="flex mt-8 items-center">
+            <div class="m-w-40 py-2 text-center rounded-md bg-main">
+              <i class="fa-solid fa-phone"></i>
+            </div>
+            <span class="ml-4">0795446403</span>
+          </div>
+
+          <div class="flex mt-2 items-center">
+            <div class="m-w-40 py-2 text-center rounded-md bg-main">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <span class="ml-4">group1Portfolio@gmail.com</span>
+          </div>
+
+
+          <div class="flex mt-2 items-center">
+            <div class="m-w-40 py-2 text-center rounded-md bg-main">
+              <i class="fa-solid fa-globe"></i>
+            </div>
+            <span class="ml-4">www.bsdesigner.com</span>
+          </div>
+
+
+          <div class="flex mt-2 items-center">
+            <div class="m-w-40 py-2 text-center rounded-md bg-main">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <span class="ml-4 m-w-400">34D Mạc Thiên Tích, Phường Xuân Khánh, Quận Ninh Kiều, Thành Phố Cần Thơ</span>
           </div>
         </div>
-        <div class="w-650 m-top--20 mg-left-100">
-          <img class="mg-left-470 w-100" src="images/Order_Completed_Icon.png" alt="">
-          <p class="mdd c-primary font-inter  fs-25 f-w-700 line-height-30 mg-top--40 mg-left--10">Kiểm tra lại</p>
-          <p class="ndd  font-inter f-style-normal color-black d-justify line-height-24  f-w-400 fs-22 mg-top-20 mg-left--10">Đến giai đoạn này, hệ thống sẽ được triển khai
-            để tiến hành kiểm tra các tính năng, giao diện cũng như hiệu suất thực tế của trang web.
-            Các lỗi và vấn đề chưa hoàn thiện sẽ được bên đội ngũ phát triển
-            ghi nhận lại và sửa lỗi trong thời gian gần nhất.</p>
-        </div>  
+
+        <div class="col col-sm-12 col-md-6 col-lg-6 pl-12 mt-t-md sm:mt-4">
+            <div class="w-full">
+              <input class="w-full py-4 pl-2 text-md rounded-md c-primary" type="text" placeholder="Tên của bạn"> 
+             </div>
+             <div class="w-full mt-6">
+              <input class="w-full py-4 pl-2 text-md rounded-md c-primary" type="text" placeholder="Email của bạn"> 
+             </div>
+             <div class="w-full mt-6">
+              <input class="w-full py-4 pl-2 text-md rounded-md c-primary" type="text" placeholder="Nội dung"> 
+             </div>
+             <button class="mt-8 text-lg bg-main rounded-md text-white py-3 px-12 font-bold">Gửi</butt>
+        </div>
+       </div>
       </div>
-      <div class="">
-        <h class=" ass d-flex d-center font-inter f-style-normal c-primary f-w-700 fs-25 line-height-30">Cuối cùng là triển khai dự án</h>
-        <p class="w-600 assss m-left-11  color-black d-justify font-inter f-style-normal fs-22 mg-left-480 mg-top-20 f-w-400 line-height-24">Đây là giai đoạn cuối cùng, sau khi hoàn thiện tất cả các công đoạn,
-          đội ngũ phát triển sẽ đảm bảo rằng mọi tính năng sẽ hoạt động như mong đợi,
-          trang web sẽ được đưa vào và triển khai trong môi trường thực tế.</p>
-      </div>
-      <img class="mg-left-550 " src="images/h6.jpg" alt="">
-      <img class="mg-left-750 " src="images/h7.jpg" alt="">
-    </section>
-  </main>
+    </footer>
 
-  <!-- Footer -->
-
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="./js/slider/jquery-3.6.3.min.js"></script>
-  <script src="./js/slider/owl.carousel.min.js"></script>
-  <script src="./js/main.js"></script>
-</body>
-
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/slider/jquery-3.6.3.min.js"></script>
+    <script src="./js/slider/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

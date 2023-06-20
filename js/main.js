@@ -1,5 +1,34 @@
-// KhoaTD handle slider Project SectionĐôi chút về dự án của nhóm
+//menu
+//tạo lớp phủ overlay khi nav__mobile display
+const menuBtn = document.querySelector('.menu__btn');
+const menuIcon = document.querySelector('.menu__btn i');
+const dropMenu = document.querySelector('.nav__mobile');
+const overlay = document.querySelector('.overlay');
 
+menuBtn.onclick = function() {
+  toggleMenu();
+};
+
+overlay.onclick = function() {
+  hideMenu();
+};
+
+function toggleMenu() {
+  dropMenu.classList.toggle('open');
+  overlay.classList.toggle('show');
+  const isOpen = dropMenu.classList.contains('open');
+
+  menuIcon.classList = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+}
+
+function hideMenu() {
+  dropMenu.classList.remove('open');
+  overlay.classList.remove('show');
+  menuIcon.classList = 'fa-solid fa-bars';
+}
+
+
+// KhoaTD handle slider Project SectionĐôi chút về dự án của nhóm
 const projectContents = document.querySelectorAll('.project-content');
 const btnProjects = document.querySelectorAll('.btn-project');
 
@@ -89,4 +118,27 @@ $(document).ready(function () {
         next.addClass('active').fadeIn(2000);
     }, 3000); // Thời gian chuyển đổi giữa các hình ảnh (3 giây trong ví dụ)
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-container', {
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 8,
+      autoplay: {
+        delay: 8000,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1.5,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+      },
+    })
+  })
 
