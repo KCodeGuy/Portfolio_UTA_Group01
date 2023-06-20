@@ -98,6 +98,10 @@
   text-transform: uppercase;
 }
 
+.d-justify-content {
+  justify-content: center;
+}
+
 /* width-height-line-gap*/
 .h-182 {
   height: 182px;
@@ -200,9 +204,11 @@
 .slideshow1 {
   overflow: hidden;
 }
+
 .mg-left-750 {
   display: none;
 }
+
 .slideshow1 img {
   height: auto;
   display: none;
@@ -222,6 +228,7 @@
     width: 70%;
     text-align: center;
   }
+
   .mg-left-550 {
     margin-left: 350px;
     width: 45%;
@@ -290,6 +297,7 @@
   .services {
     background-color: var(--primary-color);
   }
+
   .w-200 {
     width: 50px;
   }

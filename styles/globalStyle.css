@@ -3,6 +3,10 @@
   --primary-color: #002952;
 }
 
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @font-face {
   font-family: "Inter";
   src: url("../fonts/Inter-Regular.ttf");
@@ -47,7 +51,7 @@ body {
 .bg-primary {
   background-color: var(--primary-color);
 }
+
 .font-inter {
   font-family: "Inter";
 }
-
